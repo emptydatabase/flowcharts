@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowcharts"
+version = "0.1.0"
+authors = [
+  { name="Stefano Negri Merlo", email="negrimerlostefano@gmail.com" },
+]
+description = "Render flowcharts from Python-like pseudocode as Pillow images"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+dependencies = ["pillow>=10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://github.com/emptydatabase/flowcharts"
+Issues = "https://github.com/emptydatabase/flowcharts/issues"
+
+[tool.setuptools]
+packages = ["flowcharts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
