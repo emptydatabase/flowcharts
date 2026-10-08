@@ -62,5 +62,5 @@ def coerce_language(value: Language | str | None) -> Language | None:
 
 register_language(Language(name="en", start="Start", end="End", yes="Yes", no="No"))
 register_language(
-    Language(name="it", start="Inizio", end="Fine", yes="Sì", no="No")
+    Language(name="it", start="Inizio", end="Fine", yes="Si", no="No")
 )
